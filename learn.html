@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Proof -- The 4-Day Advantage</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .research-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+            .table-wrap { overflow: auto; }
+            @media(max-width:720px){ .research-grid{ grid-template-columns: 1fr; } }
+        </style>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container nav-inner">
+                <h1 class="logo small">The 4-Day Advantage</h1>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="learn.html">Learn More</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="proof">
+                <h2>Proof That a 4-Day Week Works</h2>
+                <p class="lead">Below are key research points, dircet comparisons, and counterpoints with clear rebuttals</p>
+
+                <div class="video-area">
+                    <h3>Watch: A Week in the Life</h3>
+                    <div class="video-embed">
+                        <iframe width="560", height="315" src="https://www.youtube.com/watch?v=FJ0qJwCdUds"
+                        title="Youtube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <p>Or play a short local demo video:</p>
+                    <video controls width="560">
+                        <source src="https://www.youtube.com/watch?v=FJ0qJwCdUds" type="video/mp4">
+                        Your browser doesn't support the video tag.
+                    </video>
+                </div>
+
+                <div class="research-grid">
+                    <div class="stats">
+                        <h4>Quick Stats</h4>
+                        <ul>
+                            <li><strong>+10%</strong> average attendance in some districts</li>
+                            <li><strong>-20%</strong> student-reported stress levels</li>
+                            <li><strong>Test scores:</strong>stable or improved in multiple districts</li>
+                        </ul>
+
+                        <label for="satisfaction">Student satisfaction</label>
+                        <progress id="satisfaction" value="78" max="100">78%</progress>
+                    </div>
+                    <div class="table-wrap">
+                        <h4>5-Day vs 4-Day Comparison (example)</h4>
+                        <table class="compare">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>5-Day Week</th>
+                                    <th>4-Day Week</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Average Attendance</td><td>88%</td><td>98%</td></tr>
+                                <tr><td>Student Stress (self-report)</td><td>High</td><td>Lower</td></tr>
+                                <tr><td>Avg Test Scores</td><td>78%</td><td>79% (same or slightly better)</td></tr>
+                                <tr><td>Teacher Burnout</td><td>High</td><td>Reduced</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <section class="counter">
+                    <h3>Common Concerns & Responses</h3>
+                    <div class="qa">
+                        <div class="q">Concern: Less instructional hours will reduce learning.</div>
+                        <div class="a">Response: Many districts reorganize daily schedules (longer periods, focused instructions) and show equal or improved outcomes.</div>
+                    </div>
+                    <div class="qa">
+                        <div class="q">Concern: Longer schools days tire students.</div>
+                        <div class="a">Response: Good scheduling and built-in breaks keep days manageable; recovery day increases retention.</div>
+                    </div>
+                </section>
+
+                <section class="sources">
+                    <h3>Work Cited / Sources</h3>
+                    <ol>
+                        <li>Example study. Effects of Four-Day School Weeks on Adolescents (2021). https://cepa.stanford.edu/content/effects-four-day-school-weeks-adolescents-examining-impacts-schedule-academic-achievement-attendance-and-behavior-high-school</li>
+                        <li>Example report. Four-Day School Week Can Improve Academic Performance, Policy Study Finds Four-Day School Week Can Improve Academic Performance, Policy Study Finds (2015). https://news.gsu.edu/2015/08/27/four-day-school-week-can-improve-academic-performance-policy-study-finds/</li>
+                    </ol>
+                </section>
+
+                <section class="final-cta">
+                    <h3>Ready to push for change?</h3>
+                    <p>Talk to yout school board, share this page, and collect local support.</p>
+                    <a class="cta" href="https://www.cpsboe.org/contact">Contact Your Board of Education</a>
+                </section>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© <span id="year2"></span> The 4-Day Advantage - Sources Above</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('year2').textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
